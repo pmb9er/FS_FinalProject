@@ -26,6 +26,8 @@ Only files included in this mark down table with be marked!
 
 Ensure that the files included in the mark down table related the sections specified in the table.
 
+Please include the mark down table in the README.md file in the root directory of the project.
+
 ### Example of Project Structure 
 
 | PROJECT             | COMPONENT          | FILE NAMES                                                                                                                                                                            |
