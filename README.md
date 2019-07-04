@@ -20,7 +20,7 @@ Do the same for projects API, Consumer Mobile App, Provider Mobile App
 
 ### Project Structure 
 
-Generate a mark down table similar to the one in root directory of this project.
+Generate a mark down table similar to the one in root directory of this project. The following website can be used to do https://www.tablesgenerator.com/markdown_tables or edit the Project File Structure.txt file in the root directory
 
 Only files included in this mark down table with be marked!
 
