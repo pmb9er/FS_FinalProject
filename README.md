@@ -46,5 +46,19 @@ Please include the mark down table in the README.md file in the root directory o
 | API                 | Users              | eg. Rubric-file-structure\API\api\src\pages\users eg. Rubric-file-structure\API\api\provider-mobile-app\src\providers\users                                                           |
 | API                 | Bookings           | eg. Rubric-file-structure\API\api\src\pages\bookings eg. Rubric-file-structure\API\api\provider-mobile-app\src\providers\bookings                                                     |
 
+### Change Git Remote URL
 
+Create new repository on GitHub.
+
+Change the git URL associated with the project 
+
+```bash
+git remote set-url origin < new URL of your GitHub project (click 'Clone or download' button on GitHub site to see URL)>
+```
+
+Ensure that the git URL has been updated.
+
+```bash
+git remote -v
+```
 
