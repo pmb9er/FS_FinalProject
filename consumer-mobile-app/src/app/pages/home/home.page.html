@@ -1,0 +1,29 @@
+<ion-header style="text-align: center">
+  <ion-toolbar>
+    <ion-title>Welcome Back!</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    
+    <ion-item>
+      <ion-input type = text placeholder="Email" [(ngModel)] = "authUser.email" (keyup.enter) = "login()"></ion-input>
+    </ion-item>   
+    
+    <ion-item>
+      <ion-input type = "password" placeholder="Password" (keyup.enter) = "login()" [(ngModel)] = "authUser.password"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-button shape="round" (click)=login()>Login</ion-button>
+    </ion-item>
+    
+    <ion-button fill="clear" color="medium" size="small" (click)=navToPasswordReset()>Reset Password</ion-button>
+    
+    <div>
+      <ion-button fill="clear" color="medium" size="small" (click)=navToRegister()>Register</ion-button>
+    </div>
+    
+  </div>
+</ion-content>

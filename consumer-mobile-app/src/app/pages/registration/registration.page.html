@@ -1,0 +1,35 @@
+<ion-header style="text-align: center">
+    <ion-toolbar>
+      <ion-title>Make an Account</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <div class="ion-padding">
+      
+      <ion-item>
+        <!-- <ion-label>First Name</ion-label> -->
+        <ion-input type=text placeholder="First Name" [(ngModel)] = "authUser.firstName" (keyup.enter) = "register()"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input type=text placeholder="Last Name" [(ngModel)]="authUser.lastName" (keyup.enter) = "register()"></ion-input>
+      </ion-item>     
+
+      <ion-item>
+        <!-- <ion-label>Email</ion-label> -->
+        <ion-input type=text placeholder="Email" [(ngModel)]="authUser.email" (keyup.enter) = "register()"></ion-input>
+      </ion-item>
+      <ion-item>
+        <!-- <ion-label>Password</ion-label> -->
+        <ion-input type=password placeholder="Password" [(ngModel)]="authUser.password" (keyup.enter) = "register()"></ion-input>
+      </ion-item>
+        
+      <ion-button ion-button shape="round" (click)=register()>Register</ion-button>
+
+      <div>
+          <ion-button fill="clear" color="medium" size="small" (click)=navToLogin()>Already have an account?</ion-button>
+      </div>
+    
+    </div>
+  </ion-content>

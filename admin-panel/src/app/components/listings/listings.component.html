@@ -1,0 +1,27 @@
+<h2>LISTINGS</h2>
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Provider ID</th>
+        <th>Title</th>
+        <th>Location</th>
+        <th>Rating (out of 10)</th>
+        <th>Description</th>
+        <th>Price per Nighth ($)</th> 
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let listing of listings">
+        <td>{{listing.id}}</td>
+        <td>{{listing.providerId}}</td>
+        <td>{{listing.title}}</td>
+        <td>{{listing.location}}</td>
+        <td>{{listing.rating}}</td>
+        <td>{{listing.description}}</td>
+        <td>{{listing.pricePerNight}}</td>        
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Profile
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content
+  [scrollEvents]="true"
+  (ionScrollStart)="logScrollStart()"
+  (ionScroll)="logicScrolling($event)"
+  (ionScrollEnd)="logScrollEnd()">
+
+  <body>
+    <ion-item>
+    <ion-avatar><img src='/assets/avatar.jpg'></ion-avatar>
+  </ion-item>
+    <h1>My name is {{user.firstName}} {{user.lastName}}</h1>
+    <h2>You can contact me by the following:</h2>
+    <li>Email: {{user.email}}</li>
+  </body>
+</ion-content>
